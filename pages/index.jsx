@@ -1,6 +1,7 @@
 import ButtonPrimary from "@/components/Buttons/ButtonPrimary";
 import ButtonSecondary from "@/components/Buttons/ButtonSecondary";
-import { MouseSimple } from "@phosphor-icons/react";
+import { beneficios } from "@/config/beneficios";
+import { CheckFat, MouseSimple } from "@phosphor-icons/react";
 import { Col, Container, Row } from "react-bootstrap";
 import { TypeAnimation } from "react-type-animation";
 
@@ -168,6 +169,35 @@ export default function Home() {
               pode ter certeza de que estará fazendo um investimento inteligente
               na sua marca.
             </h3>
+            <Row className="d-flex align-items-center py-5">
+              <Col sm="12" lg="4">
+                <img
+                  draggable={false}
+                  src="/man-on-pc.png"
+                  width="100%"
+                  alt="Homem sentado usando um computador portátil"
+                />
+              </Col>
+              <Col sm="12" lg="8" className="py-4">
+                <strong className="f-24 fw-bold">
+                  Aqui estão alguns dos benefícios que você pode obter ao
+                  trabalhar conosco:
+                </strong>
+                {beneficios.map((item) => {
+                  return (
+                    <div
+                      key={item.id}
+                      className="d-flex align-items-center gap-4 my-3"
+                    >
+                      <CheckFat size={64} color="#9317ff" weight="duotone" />
+                      <p className="f-16 m-0">
+                        <b>{item.title}:</b> {item.beneficio}
+                      </p>
+                    </div>
+                  );
+                })}
+              </Col>
+            </Row>
           </Container>
         </section>
       </Container>
