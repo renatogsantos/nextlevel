@@ -1,0 +1,25 @@
+.slide-top {
+  -webkit-animation: slide-top 3s ease-in-out infinite alternate-reverse both;
+  animation: slide-top 3s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%);
+  }
+}

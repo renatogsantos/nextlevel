@@ -1,0 +1,41 @@
+$color-1: #ffffff;
+$color-2: #ff3600;
+$color-3: #fd1a5e;
+$color-4: #fa00ff;
+$color-5: #9317ff;
+$color-6: #0066ff;
+$color-7: #6401ff;
+$color-8: #3b445b;
+$color-9: #13161f;
+$gradient-1: linear-gradient(90deg, $color-2 0%, $color-4 50%, $color-7 100%);
+
+.color-1 {
+  color: $color-1;
+}
+.color-2 {
+  color: $color-2;
+}
+.color-3 {
+  color: $color-3;
+}
+.color-4 {
+  color: $color-4;
+}
+.color-5 {
+  color: $color-5;
+}
+.color-6 {
+  color: $color-6;
+}
+.color-7 {
+  color: $color-7;
+}
+.color-8 {
+  color: $color-8;
+}
+.color-9 {
+  color: $color-9;
+}
+.gradient-1 {
+  color: $gradient-1;
+}
