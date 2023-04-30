@@ -19,6 +19,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 .main-card {
@@ -37,4 +38,25 @@ body {
   top: 30%;
   width: 50%;
   z-index: -1;
+}
+
+.line-1 {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  width: 5%;
+}
+
+.line-2 {
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  width: 5%;
+}
+
+.line-3 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 5%;
 }

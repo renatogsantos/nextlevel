@@ -1,5 +1,10 @@
-import '@/styles/globals.scss'
+import "@/styles/globals.scss";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <ParallaxProvider>
+      <Component {...pageProps} />
+    </ParallaxProvider>
+  );
 }

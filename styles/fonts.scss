@@ -25,6 +25,14 @@ h3 {
   color: $color-1;
 }
 
+h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(16px, 5vw, 24px);
+  line-height: clamp(16px, 5vw, 24px);
+  color: $color-1;
+}
+
 p {
   font-style: normal;
   font-weight: 500;

@@ -3,12 +3,13 @@ import ButtonSecondary from "@/components/Buttons/ButtonSecondary";
 import { beneficios } from "@/config/beneficios";
 import { CheckFat, MouseSimple } from "@phosphor-icons/react";
 import { Col, Container, Row } from "react-bootstrap";
+import { Parallax } from "react-scroll-parallax";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   return (
     <>
-      <Container fluid>
+      <Container fluid className="position-relative">
         <header>
           <Container className="py-3 py-lg-5">
             <Row className="d-flex align-items-center justify-content-center">
@@ -198,9 +199,31 @@ export default function Home() {
                 })}
               </Col>
             </Row>
+            <h4 className="text-center">
+              Com nossos serviços, você pode obter todos esses benefícios e
+              muito mais, tornando-se uma presença online forte e confiável.
+              Então, não perca mais tempo e nos deixe ajudar você a alcançar
+              seus objetivos digitais!
+            </h4>
           </Container>
         </section>
       </Container>
+
+      <img
+        className="line-1 jello-horizontal d-none d-lg-flex"
+        src="line-1.svg"
+        alt=""
+      />
+      <img
+        className="line-2 jello-horizontal d-none d-lg-flex"
+        src="line-2.svg"
+        alt=""
+      />
+      <img
+        className="line-3 jello-horizontal d-none d-lg-flex"
+        src="line-3.svg"
+        alt=""
+      />
     </>
   );
 }
