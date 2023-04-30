@@ -8,7 +8,7 @@ import { TypeAnimation } from "react-type-animation";
 export default function Home() {
   return (
     <>
-      <Container fluid className="py-3 py-lg-5">
+      <Container fluid>
         <header>
           <Container className="py-3 py-lg-5">
             <Row className="d-flex align-items-center justify-content-center">
@@ -108,10 +108,10 @@ export default function Home() {
         </div>
 
         <section>
-          <Container className="py-5">
+          <Container className="main-card">
             <Row className="d-flex align-items-center g-4">
               <Col sm="12" lg="4">
-                <div className="main-card d-flex flex-column align-items-center justify-content-center">
+                <div className="d-flex flex-column align-items-center justify-content-center">
                   <img src="/check.svg" alt="simbolo de confirmação" />
                   <strong className="f-32-i mt-5">
                     Destaque sua marca online com os serviços de{" "}
